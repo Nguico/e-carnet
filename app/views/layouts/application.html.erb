@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ecarnet</title>
-    <%= csrf_meta_tags %>
+<html lang="fr" >
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon suivi d'appareillage — E-Carnet</title>
+  <meta name="description" content="Carnet de suivi d'appareillage en ligne pour assistance médicale.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+
+<%= yield %>
+
+</body>
+
 </html>
+
