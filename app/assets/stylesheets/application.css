@@ -12222,7 +12222,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .icone-page img {
-  max-height: 100%; 
+  height: 10vh; 
 
 }
 
