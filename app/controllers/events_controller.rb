@@ -1,7 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-  before_action :owned_event, only: [:edit, :update, :destroy]
 
   # GET /events
   # GET /events.json
@@ -38,14 +37,7 @@ class EventsController < ApplicationController
       end
     end
   end
-  def owned_event
-  unless current_user == @event.user
-    flash[:alert] = "That event doesn't belong to you!"
-    redirect_to root_path
-  end
-  end
-  # PATCH/PUT /events/1
-  # PATCH/PUT /events/1.json
+
   def update
     respond_to do |format|
       if @event.update(event_params)
@@ -62,13 +54,10 @@ class EventsController < ApplicationController
   # DELETE /events/1.json
 
   def destroy
-    @event.destroy
-    respond_to do |format|
-      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+  @event = Event.find(params[:id])
+  @event.destroy
+  redirect_to events_path
   end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_event
