@@ -12207,3 +12207,28 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+#entete {
+ display: flex;
+ flex-wrap: nowrap;
+ align-items: flex-end;
+ width: 75%;
+ padding-bottom: 10px;
+}
+
+.icone-page {
+  margin-right:8px; 
+    max-height: 50%; 
+
+}
+
+.icone-page img {
+  max-height: 100%; 
+
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+
+  margin-bottom: 2%;
+}
