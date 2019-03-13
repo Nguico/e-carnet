@@ -1,12 +1,12 @@
 
 <%= render 'sidebar' %>
 
-          <div class="icone-page"><img src="images/stethoscope.svg"></div>
-          <h1>Accueil</h1></div>
+          <div class="icone-page"><img src="images/historique.png"></div>
+          <h1>Historique de la prothèse 1</h1></div>
 
 <%= render 'navbar' %>
 
-<table>
+
   <thead>
     <tr>
       <th >Titre</th>
@@ -16,19 +16,24 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody><div id="conteneur-etiquette">
     <% @events.each do |event| %>
-      <tr>
-        <td><%= event.titre %></td>
-        <td><%= event.commentaire %></td>
-        <td><%= event.date %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, :method => :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+      
+        <div class="etiquette">
+            <%= event.date %>
+            <%= event.titre %>
+            <%= event.commentaire %>
+            <%= link_to 'Voir', event %>
+        <%= link_to 'Modifier', edit_event_path(event) %>
+        <%= link_to 'Supprimer', event, :method => :delete, data: { confirm: 'Êtes-vous sûr?' } %>
+        </div>
+
+        
+        
+      
+    <% end %></div>
   </tbody>
-</table>
+
 
 <%= link_to 'New Event', new_event_path %>
 

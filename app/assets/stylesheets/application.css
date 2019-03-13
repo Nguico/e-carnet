@@ -12216,23 +12216,55 @@ body.sidebar-toggled footer.sticky-footer {
  flex-wrap: nowrap;
  align-items: flex-end;
  width: 75%;
- padding-bottom: 10px;
+ padding-bottom: 14px;
 }
 
 .icone-page {
   margin-right:8px;
-    max-height: 50%;
+    max-height: 70%;
 
 }
 
 .icone-page img {
-  height: 10vh;
+  height: 11vh;
 
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   text-transform: uppercase;
-
-  margin-bottom: 2%;
+  color: #2A1E43;
+  margin-bottom: 2.5%;
 }
+
+.hide {
+  display:none;
+}
+
+#conteneur-etiquette {
+  width: 100%;
+  display: flex;
+  border: solid 1px red;
+}
+
+.etiquette {
+  border: solid 1px darkgrey;
+  height: 300px;
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
