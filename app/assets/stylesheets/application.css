@@ -12242,8 +12242,9 @@ h1 {
 }
 
 #conteneur-etiquette {
-  width: 100%;
   display: flex;
+  flex-direction: column;
+
   border: solid 1px red;
 }
 

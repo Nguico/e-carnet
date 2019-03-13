@@ -2,21 +2,18 @@
 <%= render 'sidebar' %>
 
           <div class="icone-page"><img src="images/historique.png"></div>
-          <h1>Historique de la prothèse 1</h1></div>
+          <h1>Historique</h1></div>
 
 <%= render 'navbar' %>
 
 
-  <thead>
-    <tr>
-      <th >Titre</th>
-      <th>Commentaire</th>
-      <th>Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody><div id="conteneur-etiquette">
+      Titre
+      Commentaire
+      Date
+      
+
+  <div id="conteneur-etiquette">
     <% @events.each do |event| %>
       
         <div class="etiquette">
@@ -32,7 +29,7 @@
         
       
     <% end %></div>
-  </tbody>
+  
 
 
 <%= link_to 'New Event', new_event_path %>
