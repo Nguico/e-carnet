@@ -11,8 +11,9 @@
 
        <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <span>Accueil</span></a>
+        <%= link_to root_path, :class=>"nav-link" do %>
+        Accueil
+        <% end %>
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
@@ -30,8 +31,9 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="#history">
-          <span>Historique</span></a>
+        <%= link_to historique_path, :class=>"nav-link" do %>
+        Historique
+        <% end %>
       </li>
 
 

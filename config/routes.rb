@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   end
   resources :events
   root to: 'events#index'
+  get 'historique', :to => 'events#historique'
 end
