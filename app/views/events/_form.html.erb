@@ -12,21 +12,22 @@
   <% end %>
 
   <div class="field">
+    <h6>Intitulé</h6>
     <%= form.label :titre %>
     <%= form.text_field :titre, id: :event_titre %>
   </div>
-
+  <h6>Commentaire</h6>
   <div class="field">
     <%= form.label :commentaire %>
     <%= form.text_area :commentaire, id: :event_commentaire %>
   </div>
-
+  <h6>Date</h6>
   <div class="field">
     <%= form.label :date %>
     <%= form.date_select :date, id: :event_date %>
   </div>
 
-  
+
 
   <div class="actions">
     <%= form.submit %>
