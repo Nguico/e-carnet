@@ -12248,14 +12248,14 @@ h1 {
 #conteneur-etiquette {
   display: flex;
   flex-direction: column;
-
-  border: solid 1px red;
 }
 
 .etiquette {
   border: solid 1px darkgrey;
-  height: 300px;
-  width: 500px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .copyright {
