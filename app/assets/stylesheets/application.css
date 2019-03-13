@@ -11291,7 +11291,7 @@ a:focus {
 }
 
 .sidebar .nav-item.active .nav-link {
-  font-weight: 700;
+  font-weight: 500;
   background-color: #2BC4BE;
   color:white;
 }

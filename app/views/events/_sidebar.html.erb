@@ -10,14 +10,14 @@
       </div>
 
        <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item active" id="accueil">
         <%= link_to root_path, :class=>"nav-link" do %>
         Accueil
         <% end %>
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item" id="carnet">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <span>Carnet de prothèse</span>
         </a>
@@ -30,9 +30,9 @@
       </li>
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item" id="historique">
         <%= link_to historique_path, :class=>"nav-link" do %>
-        Historique
+        <span>Historique</span>
         <% end %>
       </li>
 
@@ -40,7 +40,7 @@
 
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <li class="nav-item" id="profil">
         <a class="nav-link" href="#">
           <span>Mon Profil</span></a>
       </li>
@@ -49,7 +49,7 @@
       <hr class="sidebar-divider d-none d-md-block">
 
       <!-- Nav Item - Tables -->
-      <li class="nav-item">
+      <li class="nav-item" id="aide">
         <a class="nav-link" href="#">
           <span>Aide</span></a>
       </li>
