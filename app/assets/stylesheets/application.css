@@ -335,7 +335,7 @@ sup {
 }
 
 a {
-  color: #4e73df;
+  color: #2BC4BE;
   text-decoration: none;
   background-color: transparent;
 }
@@ -5052,7 +5052,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #2A2E43;
   background-clip: border-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
@@ -5078,6 +5078,8 @@ input[type="button"].btn-block {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
+  color: white;
+
 }
 
 .card-title {
@@ -5104,7 +5106,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #f8f9fc;
+  background-color: white;
   border-bottom: 1px solid #e3e6f0;
 }
 
@@ -10549,7 +10551,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #4e73df !important;
+  color: #2BC4BE !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
