@@ -1,7 +1,7 @@
 
 <%= render 'sidebar' %>
 
-          <div class="icone-page"><img src="images/historique.png"></div>
+          <div class="icone-page"><img src="/images/historique.png"></div>
           <h1>Historique</h1></div>
 
 <%= render 'navbar' %>
@@ -13,12 +13,14 @@
     <% @events.each do |event| %>
       
         <div class="etiquette">
+          <div class="header-etiquette">
             <%= event.date %>
             <%= event.titre %>
             <%= event.commentaire %>
             <%= link_to 'Voir', event %>
         <%= link_to 'Modifier', edit_event_path(event) %>
         <%= link_to 'Supprimer', event, :method => :delete, data: { confirm: 'Êtes-vous sûr?' } %>
+      </div>
         </div>
 
         
