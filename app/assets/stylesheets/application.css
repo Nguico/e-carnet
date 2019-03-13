@@ -770,6 +770,9 @@ pre code {
   overflow: scroll;
 
 }
+.container-fluid::-webkit-scrollbar { 
+    display: none; 
+}
 
 .row {
   display: -webkit-box;
