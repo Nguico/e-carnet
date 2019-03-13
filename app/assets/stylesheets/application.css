@@ -11460,6 +11460,7 @@ a:focus {
     padding: 1rem;
     padding-left: 22%;
     width: 24rem;
+    font-size: 0.85em;
   }
   .sidebar .nav-item .nav-link i {
     font-size: 0.85rem;
