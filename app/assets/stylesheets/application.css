@@ -766,6 +766,9 @@ pre code {
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+  max-height: 77vh;
+  overflow: scroll;
+
 }
 
 .row {
@@ -10760,6 +10763,7 @@ a:focus {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+
 }
 
 .container,
@@ -12252,6 +12256,11 @@ h1 {
   border: solid 1px darkgrey;
   height: 300px;
   width: 500px;
+}
+
+.copyright {
+  margin-top: 40%; 
+  font-size: 0.8em;
 }
 
 
