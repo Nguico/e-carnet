@@ -12,22 +12,11 @@
        <!-- Nav Item - Dashboard -->
       <li class="nav-item" id="accueil">
         <%= link_to root_path, :class=>"nav-link" do %>
-        Historique
+        Mon historique
         <% end %>
       </li>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item" id="carnet">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <span>Carnet de prothèse</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Prothèse 1</a>
-            <a class="collapse-item" href="#">Prothèse 2</a>
-          </div>
-        </div>
-      </li>
+     
 
 
 
@@ -35,8 +24,15 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item" id="profil">
-        <a class="nav-link" href="#">
-          <span>Mon Profil</span></a>
+         <%= link_to gears_path, :class=>"nav-link" do %>
+        Mes prothèses
+        <% end %>
+      </li>
+
+      <li class="nav-item" id="profil">
+         <%= link_to "#{}", :class=>"nav-link" do %>
+        Mon profil
+        <% end %>
       </li>
 
 <!-- Divider -->
