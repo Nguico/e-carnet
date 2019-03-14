@@ -17,10 +17,12 @@
 </head>
 
 <body>
+<script type="text/javascript">if (location.href.indexOf('reload')==-1){location.href=location.href+'?reload';}</script>
 
 <%= yield %>
 <%= csrf_meta_tags %>
 <%= javascript_include_tag "application" %>
+
 
 </body>
 
