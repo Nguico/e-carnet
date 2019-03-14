@@ -8,10 +8,6 @@ class EventsController < ApplicationController
     @events = current_user.events
   end
 
-  def historique
-    @events = current_user.events
-  end
-
   # GET /events/1
   # GET /events/1.json
   def show
