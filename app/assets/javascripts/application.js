@@ -18,6 +18,9 @@
   "use strict"; // Start of use strict
 
   // Toggle the side navigation
+  if(window.matchMedia("(max-width: 1140px)").matches) {
+  $(".sidebar").toggleClass("toggled");
+  }
 
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
