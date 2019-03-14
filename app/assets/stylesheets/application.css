@@ -12327,11 +12327,237 @@ h1 {
 }
 
 
+#Formmain {
+  width:50%;
+  margin:auto;
+}
+
+#Formnamesurname {
+  width:100%;
+  margin:auto;
+}
+
+#Formpoidtaille {
+  width:100%;
+  margin:auto;
+}
+
+#Formsexeage {
+  width:100%;
+  margin:auto;
+}
+
+#Form-surname {
+  margin-right:auto;
+  width:45%;
+}
+
+#Form-name {
+  margin-left:auto;
+  width:45%;
+}
+
+#Form-sexe {
+  margin-right:auto;
+  width:45%;
+}
+
+#Form-age {
+  margin-left:auto;
+  width:45%;
+}
+
+#Form-poid {
+  margin-right:auto;
+  width:45%;
+}
+
+#Form-taille {
+  margin-left:auto;
+  width:45%;
+}
+
+.form-control {
+  background-color:#2A2E43;
+  height:55px;
+  color:white;
+}
+
+
+.div1 {position:relative;}
+
+.div2 {top:2%; left:3%; position:absolute; color:#2BC4BE;}
+
+.div3 {position:relative; left:10%; width:80%; padding-top:-6%;}
+
+.div4 {position:absolute; left:3%; top:2%; color:#2BC4BE;}
+
+#medecin {
+  background-color: #2A2E43;
+  border-radius:2%;
+}
+
+#Inputnommedecin  {
+  border:none;
+  height:60px;
+}
+#Inputemailmedecin {
+  border:none;
+  height:60px;
+}
+#Inputadressemedecin {
+  border:none;
+  height:60px;
+}
+
+@media screen and (max-width:500px) {
+  #Formmain {
+    width:auto;
+    margin-left:1%;
+    margin-right:1%;
+  }
+  .container-fluid {
+    padding-left:3%;
+    padding-right:3%;
+  }
+  #logoettitre {
+    width:20%;
+  }
+   #logoettitre {
+    width:30px
+  }
+}
+
+@media screen and (max-width:1100px) {
+
+  #Formmain {
+    width:auto;
+    margin-left:1%;
+    margin-right:1%;
+  }
+  .div3 {
+    padding-top:8%;
+  }
+
+  #Inputnommedecin  {
+  border:none;
+  height:80px;
+  }
+
+  #Inputemailmedecin {
+  border:none;
+  height:80px;
+  }
+
+  #Inputadressemedecin {
+  border:none;
+  height:80px;
+  }
+
+  #linkadd {
+    font-size:0.6em;
+  }
+
+
+}
+
+#photo_patient {
+  width:100px;
+  height:100px;
+  margin:auto;
+  background-size:cover;
+  border-radius:8%;
+}
+
+h2 {
+  text-align:center;
+  font-size:0.9em;
+  margin-top:0.5%;
+  color:#2BC4BE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+}
+
+#logoettitre {
+  margin:auto;
+  width:40%;
+  margin-left:3%;
+}
+
+#monprofil_title {
+  color:#2A2E43;
+}
 
 
 
+#contactparmail {
+  background-color: #959DAD;
+  padding-bottom:5%;
+  padding-top:5%;
+}
+
+#contacter {
+  width:30%;
+  margin:auto;
+}
+
+#linkcontact {
+  text-decoration: none;
+  color:white;
+}
+
+.card_prothese {
+  width:45%;
+  margin:auto;
+  margin-bottom:5%;
+}
 
 
+
+#card_prothesenew {
+  width:45%;
+  margin:auto;
+  margin-bottom:2%;
+}
+
+#zoneinfo {
+  text-align:justify;
+  margin:auto;
+  width:100%;
+  background-color: #2A2E43;
+  border-radius:8px;
+  color:white;
+}
+
+.card-header {
+  text-align:center;
+  background-color:#2BC4BE;
+  color:white;
+}
+
+.form-control input, .form-control textarea {
+  background-color: #2A2E43;
+  color:white;
+}
+
+#btncreer {
+  width:5%;
+  margin:auto;
+  margin-bottom:3%;
+}
+
+#btncreerlink
+{
+  background-color:#2BC4BE;
+  color:white;
+  border:solid 10px #2BC4BE;
+  border-radius:5px;
+}
+
+.card-body {
+  background-color: white;
+  color: #858796;
+}
 
 
 

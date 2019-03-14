@@ -6,7 +6,7 @@
 <%= render '/events/navbar' %>
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h2 class="h3 mb-0 text-gray-800">Historique des prothèses</h1>
+            <h2 class="h3 mb-0 text-gray-800">Mes prothèses</h1>
             <%= link_to '+ Ajouter une prothèse', new_gear_path, :class=>"button-action" %>
           </div>
 
@@ -45,6 +45,35 @@
 
 
     <% end %></div>
+
+        <div class="row">
+<div class="card col-xs-6 card_prothese">
+  <h5 class="card-header">Prothese n°1</h5>
+  <div class="card-body">
+
+    <div>
+      <label for="zoneinfo">Nom</label>
+      <input type="text" class="form-control" disabled="disabled" >
+    </div>
+
+    <div>
+      <label for="inputinstall">Date d'installation</label> 
+      <input type="date" class="form-control"  disabled="disabled" >
+    </div>
+
+    <div>
+      <label for="inputend">Date d'expiration</label>
+      <input type="date" class="form-control"  disabled="disabled" >
+    </div>
+
+    <div>
+      <label for="zoneinfo">Description</label>
+      <Form>
+        <Textarea name="nom" rows=4 cols=40 id="zoneinfo" disabled="disabled"></Textarea>
+      </Form>
+    </div>
+  </div>
+</div>
 
 
 <%= render '/events/footer' %>
