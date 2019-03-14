@@ -50,8 +50,11 @@
     <%= form.label :date %>
     <%= form.date_select :date, id: :event_date %>
   </div>
-
-
+  <h6>Prothèse</h6>
+  <div class="field">
+  <%= form.label :gear_id %>
+  <%= form.collection_select :gear_id, Gear.all, :id, :name %>
+  </div>
 
   <div class="form-actions"><center>
     <%= form.submit :class => 'button-action' %>
