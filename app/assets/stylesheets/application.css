@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
 @font-face {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -430,8 +439,8 @@ button {
 }
 
 .button-action {
-  background: #2BC4BE;
-  color: white;
+  background-color: #2BC4BE!important;
+  color: white!important;
   font-weight: bold;
   padding: 1vh;
   border-radius: 0.6vh;
@@ -440,7 +449,7 @@ button {
 }
 
 .button-action:hover {
-  background: #D1D3E2;
+  background-color: #D1D3E2!important;
   color: white;
   transition: 0.3s;
   text-decoration: none;
@@ -3686,6 +3695,11 @@ input[type="button"].btn-block {
   color: #2BC4BE;
 }
 
+.white-cross {
+  color:white;
+  font-size:22px;
+}
+
 .user {
   background: #F8F9FC;
   padding: 1vh;
@@ -5096,7 +5110,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #2A2E43;
+  background-color: transparent;
   background-clip: border-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;

@@ -1,15 +1,31 @@
+<div id="conteneur-etiquette">
+      <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0" >Renseignez le maximum d'informations à propos de votre prothèse</h6>
+                  <div class="dropdown no-arrow">
+                    <%= link_to gears_path, :class=>"dropdown-toggle" do %>
+                      <i class="fas fa-times fa-sm fa-fw white-cross"></i>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
 
-<%= simple_form_for(@gear) do |f| %>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <%= simple_form_for(@gear) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-  
+
     <div class="field">
     <h6>Nom de la prothèse</h6>
     <%= f.input :name %>
   </div>
-  
+
   <div class="field">
     <h6>Numéro de série</h6>
     <%= f.input :serie %>
@@ -26,11 +42,17 @@
   </div>
 
   <div class="field">
-    <h6>Description</h6>
+    <h6>Description technique</h6>
     <%= f.input :description %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <div class="form-actions"><center>
+    <%= f.button :submit, :class => 'button-action' %>
+  </div></center>
 <% end %>
+                </div>
+              </div>
+
+
+
+</div>

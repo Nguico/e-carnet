@@ -1,4 +1,28 @@
-<%= form_with(model: event, local: true) do |form| %>
+
+
+
+
+
+
+
+<div id="conteneur-etiquette">
+      <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0" >Qu'avez-vous fait dernièrement ?</h6>
+                  <div class="dropdown no-arrow">
+                    <%= link_to events_path, :class=>"dropdown-toggle" do %>
+                      <i class="fas fa-times fa-sm fa-fw white-cross"></i>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <%= form_with(model: event, local: true) do |form| %>
   <% if event.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
@@ -29,7 +53,7 @@
 
 
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <div class="form-actions"><center>
+    <%= form.submit :class => 'button-action' %>
+  </div></center>
 <% end %>
