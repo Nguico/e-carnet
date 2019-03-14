@@ -23,9 +23,15 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
 
-                      <%= link_to 'Modifier', edit_event_path(event) %>
+                      <%= link_to edit_event_path(event), :class=>"dropdown-item" do %>
+                      <i class="far fa-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Modifier
+                      <% end %>
                       <div class="dropdown-divider"></div>
-                      <%= link_to 'Supprimer', event, :method => :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cela ?' } %>
+                      <%= link_to event, :class=>"dropdown-item logout", :method => :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cela ?' } do %>
+                      <i class="far fa-trash-alt fa-sm fa-fw mr-2"></i>
+                      Supprimer
+                      <% end %>
                     </div>
                   </div>
                 </div>
@@ -40,7 +46,7 @@
     <% end %></div>
 
 
-
-
-
 <%= render 'footer' %>
+
+
+
