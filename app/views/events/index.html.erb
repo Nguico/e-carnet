@@ -24,7 +24,7 @@
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <%= link_to 'Voir', event %><br>
+              
                       <%= link_to 'Modifier', edit_event_path(event) %>
                       <div class="dropdown-divider"></div>
                       <%= link_to 'Supprimer', event, :method => :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cela ?' } %>

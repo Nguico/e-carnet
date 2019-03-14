@@ -4,10 +4,29 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+  
+    <div class="field">
+    <h6>Nom de la prothèse</h6>
     <%= f.input :name %>
+  </div>
+  
+  <div class="field">
+    <h6>Numéro de série</h6>
     <%= f.input :serie %>
+  </div>
+
+  <div class="field">
+    <h6>Date d'installation</h6>
     <%= f.input :installation %>
+  </div>
+
+  <div class="field">
+    <h6>Date d'expiration</h6>
     <%= f.input :expiry %>
+  </div>
+
+  <div class="field">
+    <h6>Description</h6>
     <%= f.input :description %>
   </div>
 
