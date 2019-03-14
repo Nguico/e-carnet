@@ -3681,6 +3681,16 @@ input[type="button"].btn-block {
   color: red;
 }
 
+.blue {
+  color: #2BC4BE;
+}
+
+.user {
+  background: #F8F9FC;
+  padding: 1vh;
+  border-radius: 0.6vh;
+}
+
 .dropdown-item:hover, .dropdown-item:focus {
   color: #2e2f37;
   text-decoration: none;
