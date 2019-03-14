@@ -11170,6 +11170,7 @@ a:focus {
 .topbar #sidebarToggleTop {
   height: 2.5rem;
   width: 2.5rem;
+
 }
 
 .topbar #sidebarToggleTop:hover {
@@ -12575,9 +12576,8 @@ h2 {
 }
 
 
-#user_email, #user_password {
+#user_email, #user_password, #user_password_confirmation {
   max-width: 100%;
 }
-
 
 
