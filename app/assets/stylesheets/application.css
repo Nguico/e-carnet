@@ -429,8 +429,8 @@ button {
 }
 
 .button-action {
-  background: #2BC4BE;
-  color: white;
+  background-color: #2BC4BE!important;
+  color: white!important;
   font-weight: bold;
   padding: 1vh;
   border-radius: 0.6vh;
@@ -439,7 +439,7 @@ button {
 }
 
 .button-action:hover {
-  background: #D1D3E2;
+  background-color: #D1D3E2!important;
   color: white;
   transition: 0.3s;
   text-decoration: none;
@@ -3683,6 +3683,11 @@ input[type="button"].btn-block {
 
 .blue {
   color: #2BC4BE;
+}
+
+.white-cross {
+  color:white;
+  font-size:22px;
 }
 
 .user {
