@@ -16,7 +16,7 @@
         <% end %>
       </li>
 
-     
+
 
 
 
@@ -29,19 +29,14 @@
         <% end %>
       </li>
 
-      <li class="nav-item" id="profil">
-         <%= link_to "#{}", :class=>"nav-link" do %>
-        Mon profil
-        <% end %>
-      </li>
-
 <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
       <!-- Nav Item - Tables -->
       <li class="nav-item" id="aide">
-        <a class="nav-link" href="#">
-          <span>Aide</span></a>
+        <%= link_to aide_path, :class=>"nav-link" do %>
+        Aide
+        <% end %>
       </li>
 
 
