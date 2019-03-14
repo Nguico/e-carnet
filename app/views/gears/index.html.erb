@@ -42,3 +42,60 @@
 <%= link_to 'New Gear', new_gear_path %>
 
 <%= render '/events/footer' %>
+
+
+
+
+
+
+
+
+
+
+<%= render 'sidebar' %>
+
+          <div class="icone-page"><img src="/images/historique.png"></div>
+          <h1>Mon historique</h1></div>
+
+<%= render 'navbar' %>
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h2 class="h3 mb-0 text-gray-800">Historique des prothèses</h1>
+            <%= link_to 'Ajouter une prothèse', new_gear_path %>
+          </div>
+
+
+
+  <div id="conteneur-etiquette">
+    <% @gears.each do |gear| %>
+      <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary"><%= gear.name %></h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <%= link_to 'Voir', gear %><br>
+                      <%= link_to 'Modifier', edit_gear_path(gear) %>
+                      <div class="dropdown-divider"></div>
+                      <%= link_to 'Supprimer', gear, :method => :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cela ?' } %>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <%= gear.description %><br><%= gear.serie %><br><%= gear.installation %><br><%= gear.expiry %>
+                </div>
+              </div>
+
+
+
+    <% end %></div>
+
+
+
+
+
+<%= render 'footer' %>
