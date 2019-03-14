@@ -132,7 +132,7 @@ form .field, form h6 {
 form select {
     border: 1px solid #2BC4BE;
   background-color: white  ;
-  margin: 0 auto 10px auto;  
+  margin: 0 auto 10px auto;
 
 }
 
@@ -426,6 +426,22 @@ label {
 
 button {
   border-radius: 0;
+}
+
+.button-action {
+  background: #2BC4BE;
+  color: white;
+  font-weight: bold;
+  padding: 1vh;
+  border-radius: 0.6vh;
+  transition: 0.3s;
+}
+
+.button-action:hover {
+  background: #D1D3E2;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
 button:focus {
@@ -786,8 +802,8 @@ pre code {
   overflow: scroll;
 
 }
-.container-fluid::-webkit-scrollbar { 
-    display: none; 
+.container-fluid::-webkit-scrollbar {
+    display: none;
 }
 
 .row {
@@ -12280,7 +12296,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .header-etiquette {
@@ -12290,7 +12306,7 @@ h1 {
 }
 
 .copyright {
-  margin-top: 40%; 
+  margin-top: 40%;
   font-size: 0.8em;
 }
 

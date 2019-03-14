@@ -8,10 +8,8 @@
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h2 class="h3 mb-0 text-gray-800">Historique des évènements</h1>
-            <%= link_to 'Ajouter un évènement', new_event_path %>
+            <%= link_to '+ Ajouter un évènement', new_event_path, :class=>"button-action" %>
           </div>
-
-
 
   <div id="conteneur-etiquette">
     <% @events.each do |event| %>
@@ -24,7 +22,7 @@
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
-              
+
                       <%= link_to 'Modifier', edit_event_path(event) %>
                       <div class="dropdown-divider"></div>
                       <%= link_to 'Supprimer', event, :method => :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cela ?' } %>
