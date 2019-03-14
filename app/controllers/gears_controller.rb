@@ -25,15 +25,10 @@ class GearsController < ApplicationController
   # POST /gears.json
   def create
     @gear = Gear.new(gear_params)
-
-    respond_to do |format|
-      if @gear.save
-        format.html { redirect_to @gear, notice: 'Gear was successfully created.' }
-        format.json { render :show, status: :created, location: @gear }
-      else
-        format.html { render :new }
-        format.json { render json: @gear.errors, status: :unprocessable_entity }
-      end
+    if @gear.save
+      redirect_to gears_path
+    else
+      redirect_to gears_path
     end
   end
 
@@ -69,6 +64,6 @@ class GearsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gear_params
-      params.require(:gear).permit(:name, :serie, :installation-date, :expiry-date, :description)
+      params.require(:gear).permit(:name, :serie, :installation, :expiry, :description)
     end
 end
