@@ -22,8 +22,7 @@
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <%= link_to 'Voir', gear %><br>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
                       <%= link_to 'Modifier', edit_gear_path(gear) %>
                       <div class="dropdown-divider"></div>
                       <%= link_to 'Supprimer', gear, :method => :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cela ?' } %>

@@ -435,6 +435,7 @@ button {
   padding: 1vh;
   border-radius: 0.6vh;
   transition: 0.3s;
+  font-size: 14px;
 }
 
 .button-action:hover {
