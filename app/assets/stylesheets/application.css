@@ -61,6 +61,7 @@ body :-ms-input-placeholder {
   width: 350px;
   height: 100px;
   background: url(../images/logo.svg) no-repeat center;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
@@ -12560,7 +12561,9 @@ h2 {
 }
 
 
-
+#user_email, #user_password {
+  max-width: 100%;
+}
 
 
 
