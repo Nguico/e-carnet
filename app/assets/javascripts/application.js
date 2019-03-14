@@ -18,12 +18,15 @@
   "use strict"; // Start of use strict
 
   // Toggle the side navigation
+        $(".sidebar").toggleClass("toggled");
+
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled");
     if ($(".sidebar").hasClass("toggled")) {
       $('.sidebar .collapse').collapse('hide');
     };
+
   });
 
   // Close any open menu accordions when window is resized below 768px
@@ -61,6 +64,7 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+
 
 
 })(jQuery); // End of use strict
