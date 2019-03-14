@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gears</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Serie</th>
+      <th>Installation-date</th>
+      <th>Expiry-date</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gears.each do |gear| %>
+      <tr>
+        <td><%= gear.name %></td>
+        <td><%= gear.serie %></td>
+        <td><%= gear.installation-date %></td>
+        <td><%= gear.expiry-date %></td>
+        <td><%= gear.description %></td>
+        <td><%= link_to 'Show', gear %></td>
+        <td><%= link_to 'Edit', edit_gear_path(gear) %></td>
+        <td><%= link_to 'Destroy', gear, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gear', new_gear_path %>
