@@ -13,14 +13,15 @@
 
 
   <div id="conteneur-etiquette">
+    <div class="row">
     <% @gears.each do |gear| %>
-      <div class="card shadow mb-4">
+      <div class="card shadow col-xs-6 mb-4 card_prothese">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary"><%= gear.name %></h6>
+                  <h5 class="m-0" ><%= gear.name %></h5>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-white"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
 
@@ -38,42 +39,30 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                  <%= gear.description %><br><%= gear.serie %><br><%= gear.installation %><br><%= gear.expiry %>
+                  <div>
+      <label for="inputinstall">Date d'installation</label> 
+      <%= gear.installation %>
+    </div>
+
+    <div>
+      <label for="inputend">Date d'expiration</label>
+      <%= gear.expiry %>
+    </div>
+
+    <div>
+      <label for="zoneinfo">Description</label>
+      <div class="card-prothese description"><%= gear.description %></div>
+    </div>
                 </div>
               </div>
 
 
 
-    <% end %></div>
+               
 
-        <div class="row">
-<div class="card col-xs-6 card_prothese">
-  <h5 class="card-header">Prothese n°1</h5>
-  <div class="card-body">
+    <% end %></div></div>
 
-    <div>
-      <label for="zoneinfo">Nom</label>
-      <input type="text" class="form-control" disabled="disabled" >
-    </div>
-
-    <div>
-      <label for="inputinstall">Date d'installation</label> 
-      <input type="date" class="form-control"  disabled="disabled" >
-    </div>
-
-    <div>
-      <label for="inputend">Date d'expiration</label>
-      <input type="date" class="form-control"  disabled="disabled" >
-    </div>
-
-    <div>
-      <label for="zoneinfo">Description</label>
-      <Form>
-        <Textarea name="nom" rows=4 cols=40 id="zoneinfo" disabled="disabled"></Textarea>
-      </Form>
-    </div>
-  </div>
-</div>
+ 
 
 
 <%= render '/events/footer' %>
