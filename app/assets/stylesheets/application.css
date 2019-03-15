@@ -2185,7 +2185,7 @@ pre code {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1140px) {
   .sidebar {
     width: 300vh!important;
   }
@@ -2197,6 +2197,7 @@ h1 {
 }
 .topbar #sidebarToggleTop {
     margin-top: 0.8em!important;
+}
 }
 
 @media (max-width: 767.98px) {
