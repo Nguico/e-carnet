@@ -50,6 +50,11 @@
     <%= form.label :date %>
     <%= form.date_select :date, id: :event_date %>
   </div>
+  <h6>Motif de l'évènement</h6>
+  <div class="field">
+    <%= form.label :reason %>
+    <%= form.text_field :reason, id: :event_reason %>
+  </div>
   <h6>Prothèse</h6>
   <div class="field">
   <%= form.label :gear_id %>

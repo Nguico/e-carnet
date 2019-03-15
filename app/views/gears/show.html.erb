@@ -1,29 +1,40 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @gear.name %>
-</p>
+<%= render '/events/sidebar' %>
 
-<p>
-  <strong>Serie:</strong>
-  <%= @gear.serie %>
-</p>
+          <div class="icone-page"><img src="/images/stethoscope.svg"></div>
+          <h1>Ma prothèse</h1></div>
 
-<p>
-  <strong>Installation-date:</strong>
-  <%= @gear.installation %>
-</p>
+<%= render '/events/navbar' %>
 
-<p>
-  <strong>Expiry-date:</strong>
-  <%= @gear.expiry %>
-</p>
+  <div id="conteneur-etiquette">
+    <div class="row">
+      <div class="card shadow col-xs-6 mb-4 card_prothese" style="width: 100%;">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h5 class="m-0" ><%= @gear.name %></h5>
+                  <div class="dropdown no-arrow">
+                    <%= link_to gears_path, :class=>"dropdown-toggle" do %>
+                      <i class="fas fa-times fa-sm fa-fw white-cross"></i>
+                    <% end %>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  ✔️ Prothèse installée le <%= @gear.installation %><br>
+                  ⚠️ Elle expirera le <%= @gear.expiry %><br><br>
+                  <%= @gear.description %><br><br>
+                  Derniers évènements relatifs à cette prothèse :<br><br>
+                  <span class="user">Fonctionnalité à venir</span>
+                </div>
+              </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @gear.description %>
-</p>
 
-<%= link_to 'Edit', edit_gear_path(@gear) %> |
-<%= link_to 'Back', gears_path %>
+
+
+
+    </div></div>
+
+
+
+
+<%= render '/events/footer' %>

@@ -18,6 +18,7 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0"><%= event.date.strftime("%d/%m/%Y") %> | <%= event.titre %></h6>
                   <div class="dropdown no-arrow">
+                    <span class="motif"><%= event.reason %></span>
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-white"></i>
                     </a>
@@ -36,15 +37,18 @@
                   </div>
                 </div>
                 <!-- Card Body -->
-                <div class="card-body">
-                  <%= event.commentaire %><br>
-                  <%= event.gear_id %>
+                <div class="card-body no-underline">
+                  <%= event.commentaire %><br><br>
+                  <%= link_to event.gear do %>
+                  <span class="details">L'évènement concerne votre prothèse : <%= event.gear %></span>
+                  <% end %>
                 </div>
               </div>
 
 
 
-    <% end %></div>
+    <% end %>
+  </div>
 
 
 <%= render 'footer' %>

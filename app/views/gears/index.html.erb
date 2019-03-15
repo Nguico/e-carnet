@@ -18,7 +18,11 @@
       <div class="card shadow col-xs-6 mb-4 card_prothese">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h5 class="m-0" ><%= gear.name %></h5>
+                  <span class="link-white">
+                  <%= link_to gear do %>
+                  <h5 class="m-0" ><%= gear.name %> <span class="details">afficher plus de détails</span></h5>
+                  <% end %>
+                  </span>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-white"></i>
@@ -39,30 +43,21 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                  <div>
-      <label for="inputinstall">Date d'installation</label> 
-      <%= gear.installation %>
-    </div>
-
-    <div>
-      <label for="inputend">Date d'expiration</label>
-      <%= gear.expiry %>
-    </div>
-
-    <div>
-      <label for="zoneinfo">Description</label>
-      <div class="card-prothese description"><%= gear.description %></div>
+                  ✔️ Prothèse installée le <%= gear.installation %><br>
+                  ⚠️ Elle expirera le <%= gear.expiry %><br><br>
+                  <%= gear.description %>
+                </div>
     </div>
                 </div>
               </div>
 
 
 
-               
+
 
     <% end %></div></div>
 
- 
+
 
 
 <%= render '/events/footer' %>
