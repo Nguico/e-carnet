@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal
+  font-style: normal;
   font-weight: 300;
 }
 * {
@@ -10622,11 +10622,11 @@ button.bg-dark:focus {
 }
 
 .font-weight-light {
-  font-weight: 300 !important;
+  font-weight: 300!important;
 }
 
 .font-weight-lighter {
-  font-weight: lighter !important;
+  font-weight: lighter!important;
 }
 
 .font-weight-normal {
