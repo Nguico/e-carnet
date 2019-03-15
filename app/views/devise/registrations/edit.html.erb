@@ -5,9 +5,24 @@
 
 <%= render '/events/navbar' %>
 
-<p id="notice"><%= notice %></p>
+<div id="conteneur-etiquette">
+      <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0" >Modifiez votre compte ou supprimez vos données</h6>
+                  <div class="dropdown no-arrow">
+                    <%= link_to root_path, :class=>"dropdown-toggle" do %>
+                      <i class="fas fa-times fa-sm fa-fw white-cross"></i>
+                    <% end %>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in card-modify" aria-labelledby="dropdownMenuLink">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
@@ -21,7 +36,7 @@
 
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, placeholder: "Nouveau mot de passe", autocomplete: "new-password" %>
     <% if @minimum_password_length %>
       <br />
       <em><%= @minimum_password_length %> characters minimum</em>
@@ -30,12 +45,12 @@
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, placeholder: "Confirmer le mot de passe", autocomplete: "new-password" %>
   </div>
 
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
+    <%= f.password_field :current_password, placeholder: "Mot de passe actuel", autocomplete: "current-password" %>
   </div>
 
   <div class="actions">
@@ -43,8 +58,12 @@
   </div>
 <% end %>
 
-<h3>Cancel my account</h3>
+<p><%= button_to "Cancel my account", registration_path(resource_name), :class=>"logout", data: { confirm: "Are you sure?" }, method: :delete %></p>
+                </div>
+              </div>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+
+
+</div>
 
 <%= render '/events/footer' %>

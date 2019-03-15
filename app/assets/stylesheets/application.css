@@ -55,7 +55,7 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: url(../images/femme.png) no-repeat right 20% center, radial-gradient(#F9FBFB, #92BFBE);
+  background: url(../images/fond-perso.png) no-repeat right 10% center, radial-gradient(#F9FBFB, #92BFBE);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -12580,4 +12580,10 @@ h2 {
   max-width: 100%;
 }
 
+a:hover {
+  text-decoration: none;
+}
 
+form .bouton {
+  padding: 13px;
+}
