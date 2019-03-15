@@ -2185,6 +2185,20 @@ pre code {
   }
 }
 
+@media (max-width: 1400px) {
+  .sidebar {
+    width: 300vh!important;
+  }
+  .sidebar .nav-item .nav-link {
+    width: 100%!important;
+}
+h1 {
+    font-size: 1em!important;
+}
+.topbar #sidebarToggleTop {
+    margin-top: 0.8em!important;
+}
+
 @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
