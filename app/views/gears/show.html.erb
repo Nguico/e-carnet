@@ -25,7 +25,7 @@
                   <%= @gear.description %><br><br>
                   Derniers évènements relatifs à cette prothèse :<br><br>
                   <% @events.each do |event| %>
-                    <%= link_to event do %>
+                    <%= link_to events_path do %>
                       <span class="user"><%= event.titre %></span><br><br>
                     <% end %>
                   <% end %>
