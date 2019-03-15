@@ -3706,6 +3706,10 @@ input[type="button"].btn-block {
   color: red;
 }
 
+.logg input {
+width:325px;
+}
+
 .link-white a {
   color: white!important;
   text-decoration: none!important;
