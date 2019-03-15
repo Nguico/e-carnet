@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  font-style: normal
   font-weight: 300;
 }
 * {
@@ -100,7 +100,7 @@ form input, form textarea {
   outline: 0;
   border: 1px solid #2BC4BE;
   background-color: white;
-  width: 350px;
+  width: 90%;
   height: 45px;
   border-radius: 6px;
   padding: 10px 15px;
