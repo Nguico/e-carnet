@@ -38,27 +38,27 @@
   <div class="field">
     <h6>Intitulé</h6>
     <%= form.label :titre %>
-    <%= form.text_field :titre, id: :event_titre %>
+    <%= form.text_field :titre, id: :event_titre, required: true  %>
   </div>
   <h6>Commentaire</h6>
   <div class="field">
     <%= form.label :commentaire %>
-    <%= form.text_area :commentaire, id: :event_commentaire %>
+    <%= form.text_area :commentaire, id: :event_commentaire, required: true %>
   </div>
   <h6>Date</h6>
   <div class="field">
     <%= form.label :date %>
-    <%= form.date_select :date, id: :event_date %>
+    <%= form.date_select :date, id: :event_date, required: true  %>
   </div>
   <h6>Motif de l'évènement</h6>
   <div class="field">
     <%= form.label :reason %>
-    <%= form.text_field :reason, id: :event_reason %>
+    <%= form.text_field :reason, id: :event_reason, required: true  %>
   </div>
   <h6>Prothèse</h6>
   <div class="field">
   <%= form.label :gear_id %>
-  <%= form.collection_select :gear_id, current_user.gears, :id, :name %>
+  <%= form.collection_select :gear_id, current_user.gears, :id, :name, required: true  %>
   </div>
 
   <div class="form-actions"><center>
