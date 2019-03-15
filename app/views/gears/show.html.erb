@@ -19,12 +19,16 @@
                   </div>
                 </div>
                 <!-- Card Body -->
-                <div class="card-body">
+                <div class="card-body no-underline">
                   ✔️ Prothèse installée le <%= @gear.installation %><br>
                   ⚠️ Elle expirera le <%= @gear.expiry %><br><br>
                   <%= @gear.description %><br><br>
                   Derniers évènements relatifs à cette prothèse :<br><br>
-                  <span class="user">Fonctionnalité à venir</span>
+                  <% @events.each do |event| %>
+                    <%= link_to event do %>
+                      <span class="user"><%= event.titre %></span><br><br>
+                    <% end %>
+                  <% end %>
                 </div>
               </div>
 

@@ -13,6 +13,7 @@ class GearsController < ApplicationController
   # GET /gears/1.json
   def show
     @gears = current_user.gears
+    @events = current_user.events
   end
 
   # GET /gears/new
